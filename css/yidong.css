@@ -6,6 +6,8 @@
 	html,body{
 		height: 100%;
 		width: 100%;
+		/* iOS 对 background-attachment:fixed 支持差，移动端改为随页面滚动 */
+		background-attachment: scroll;
 	}
 	/*内容样式，使用flex布局*/
 	.content{
