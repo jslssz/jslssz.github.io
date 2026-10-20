@@ -10,57 +10,22 @@ body{
 
 /*所有的字体*/
 
-/*百度搜索*/
-.baidu{
+/*搜索框*/
+.search{
 	float: left;
-	margin: 8px 0;
-	margin-left: 100px;
+	width: 100%;
+	height: 110px;
+	margin: 0 auto;
+	padding-top: 90px;
+	background: none;
 	}
-.baidu form{
-	position: relative
-}
-#Select{
-	float: left;
-	border: 1px solid #ccc	
-	}
-
-.Select-box{
-	text-align: center;
-	float: left;
+.search form{
 	position: relative;
-	}
-.Select-box ul{
-	height: 40px;
-	position: absolute;
-	left: -1px;
-	top: 0px;
-	z-index: 9999;
-	background: #FFF;
-	border: 1px solid #ccc;
-	border-top: none;
-	overflow: hidden
-	}
-.Select-box li{
-	width: 60px;
-	line-height: 40px;
-	font-size: 14px;
-	color: #484848;
-	border: 0;
-	cursor: pointer;
-	}
-.Select-box li:hover{
-	background: #3385ff;
-	color: #FFF;
-	}
-.Select-box .this_s{
-	color: #317ef3;
-	}
-.Select-box .this_s:hover{
-	background: #FFF;
-	color: #317ef3;
-	}
-	
-.qingkong{
+	width: 520px;
+	margin: 0 auto;
+}
+
+.search-clear{
 	position: absolute;
 	right: 95px;
 	top: 12px;
@@ -75,96 +40,41 @@ body{
 	font-size: 14px;
 	display: none;
 }
-.qingkong:hover{
+.search-clear:hover{
 	background: rgba(0,0,0,0.2);
 }
-.qingkong:active{
+.search-clear:active{
 	background: rgba(0,0,0,0.3);
 }
 
 /*内容区域*/
-.body{
+.main{
 	width: 100%;
 	height: auto
-}
-.bg-2{
-	padding-top: 60px;
 }
 .content{
 	width: 1100px;
 	overflow: hidden;
 	margin: 30px auto;
 }
-	
-	
-.nav-list{
-	width: 1100px;
-	}
-
-/*优秀网站推荐*/
-
-/*小分栏*/
-.mix-content{
-	width: 1120px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.left-tips{
-	font-size: 12px;
-	color: #959595;
-	float: left;
-}
-.right-tips{
-	font-size: 12px;
-	color: #959595;
-	float: right;
-}
-
-.tit-style2{
-	margin-top: 35px;
-	padding: 0 50px;
-	padding-top: 30px;
-	line-height: 40px;
-	border-top: 2px solid #FFF;
-	border-bottom: 2px solid #FFF;
-	display: inline-block;
-
-}
-
-.min-tit{
-	font-size: 15px;
-	color: #959595;
-}
 
 /*-----------------------------简洁版样式定义- 开始---------------------------------------------------*/
 
-.baidu-2{
-	width: 100%;
-	height: 110px;
-	margin: 0 auto;
-	background: none;
-	padding-top: 90px;
-	}
-.baidu-2 form{
-	width: 520px;
-	margin: 0 auto;
-}
-.baidu-2 input{
+.search input{
 	padding: 13px 8px;
 	opacity: 0.9;
 	font-size: 15px;
 	}
-#Select-2{
+.search-field{
 	float: left;
 	}
 
-.Select-box-2{
+.engine-select{
 	text-align: center;
 	float: left;
 	position: relative;
 	}
-.Select-box-2 ul{
+.engine-select ul{
 	height: 46px;
 	position: absolute;
 	left: 0px;
@@ -175,7 +85,7 @@ body{
 	border-top: none;
 	overflow: hidden
 	}
-.Select-box-2 li{
+.engine-select li{
 	width: 60px;
 	line-height: 46px;
 	font-size: 15px;
@@ -183,18 +93,18 @@ body{
 	border: 0;
 	cursor: pointer;
 	}
-.Select-box-2 li:hover{
+.engine-select li:hover{
 	background: #3385ff;
 	color: #FFF;
 	}
-.Select-box-2 .this_s{
+.engine-select .engine-current{
 	color: #317ef3;
 	}
-.Select-box-2 .this_s:hover{
+.engine-select .engine-current:hover{
 	background: none;
 	color: #317ef3;
 	}
-#kw-2{
+#search-input{
 	width: 335px;
 	outline: 0;
 	border: 1px solid #ccc;
@@ -203,7 +113,7 @@ body{
 	padding-left: 70px;
 	font-weight:bold;
 	}
-#su-2{
+#search-btn{
 	width: 90px;
 	background: blue;
 	border: none;
@@ -215,40 +125,40 @@ body{
 	outline: none;
 
 	}	
-#su-2:hover{
+#search-btn:hover{
 	background: blue;
 	border-bottom: 1px solid blue;
 	}
-#su-2:active{
+#search-btn:active{
 	background: blue;
 	box-shadow: inset 1px 1px 3px blue;
 	-webkit-box-shadow: inset 1px 1px 3px blue;
 	}
 
 
-.jianjie{
+.categories{
 	width: 1170px;
 }
-.jj-list{
+.category{
 	width: 350px;
 	margin-right: 25px;
 	float: left;
 	margin-bottom: 20px;
 }
-.jj-list-tit{
+.category-title{
 	font-size: 16px;
 	line-height: 25px;
 	color: #ffffff;
 	padding-left: 4px;
 }
-.jj-list-con{
+.category-links{
 	overflow: hidden;
 }
-.jj-list-con li{
+.category-links li{
 	width: 110px;
 	margin: 3px 3px;
 }
-.link-3{
+.nav-link{
 	display: block;
 	background: rgba(0,0,0,.35);
 	color: #FFF;
@@ -259,7 +169,7 @@ body{
 	border-radius: 2px;
 	transition: all 0.2s
 }
-.link-3:hover{
+.nav-link:hover{
 	background: rgba(0,0,0,.45);
 	font-size: 15px;
 	font-weight: bold

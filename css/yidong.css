@@ -20,7 +20,7 @@
   		top:26%;
 }
 	/*搜索框总体样式*/
-	.baidu{
+	.search{
 		position: relative;
 		width: 14rem;
 		height: 2.6rem;
@@ -28,31 +28,27 @@
 		transform: translateX(-50%);
 	}
 
-	.baidu-2{
-		height: 2.6rem;
-	}
 	/*整个表单宽度*/
-	.baidu-2 form{
+	.search form{
 		width: 15rem;
 	}
 /*取消多级搜索，只保留百度*/
-	#Select-2{
+	.search-field{
 		position: absolute;
 		left: 0;
 	}
 
-	.Select-box-2 ul{
+	.engine-select ul{
 		display: none;
 		float: none;
 	}
 
-	.Select-box-2  li{
-		background-color: yellow;
+	.engine-select  li{
 		display: none;
 		float: none;
 	}
 	/*输入框样式*/
-	#kw-2{
+	#search-input{
 		width: 10rem;
 		height: 1.2rem;
 		border:0;
@@ -61,7 +57,7 @@
 		text-indent: 2em;
 	}
 	/*搜索框样式*/
-	#su-2{
+	#search-btn{
 		width: 3rem;
 		height: 2.22rem;
 		text-align: center;
@@ -73,11 +69,11 @@
 		border-radius: 0;
 	}
 
-	#su-2:hover{
+	#search-btn:hover{
 		background-color: blue;
 	}
 
-	#su-2:avtive{
+	#search-btn:active{
 		background-color: blue;
 		box-shadow: none;	
 	}
@@ -89,18 +85,6 @@
 	/*每个选择框的宽度*/
 	.content li{
 		width: 4.69rem;
-	}
-	/*放弃content外的footer*/
-	.footer{  
-		display: none;
-	}
-	/*移动端使用的footer*/
-	.footer1{
-		display: block;
-		text-align: center;
-		position: absolute;
-		bottom: 0;
-		color:white;
 	}
 
 	input[type="button"], input[type="submit"], input[type="reset"] {
